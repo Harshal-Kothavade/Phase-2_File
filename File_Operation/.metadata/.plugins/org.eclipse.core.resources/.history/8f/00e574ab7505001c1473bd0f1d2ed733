@@ -56,22 +56,8 @@ public class OuterFunction extends InnerFunction {
 		      case "e":
 		    	  exit();
 		            c=false;
-		            break;
-		            
-		      case "A" :
-		          create();
-		          break;
-		      
-		      case "D":
-		          delete();
-		          break;
-		      case "S":
-		          search();
-		          break;
-		      case "E":
-		    	  exit();
-		            c=false;
-		            break;
+		           
+		           break;
 		       default:
 		          System.out.println("plz select correct option");
 		           break;

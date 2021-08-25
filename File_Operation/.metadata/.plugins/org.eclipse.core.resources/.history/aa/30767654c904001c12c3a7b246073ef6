@@ -100,13 +100,13 @@ public class InnerFunction {
             	
             DataInputStream dis = new DataInputStream(System.in);
             FileOutputStream fos = new FileOutputStream("D:/INFOSTRETCH/Project FSD/Phase 2/directory for files/"+sname,true);
- 
+           // BufferedOutputStream bos = new BufferedOutputStream(fos);
             System.out.println("enter the data");
             int ch;
             while( (ch=dis.read()) != '\n'){		
                 fos.write(ch);
             }
-  
+         //   bos.flush();
             fos.close();
             
             System.out.println("Data added to file "+sname);
