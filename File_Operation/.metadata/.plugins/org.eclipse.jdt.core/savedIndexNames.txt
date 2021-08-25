@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+D:\INFOSTRETCH\Project FSD\Phase 2\File_Operation\.metadata\.plugins\org.eclipse.jdt.core
+1210658807.index
+41412270.index

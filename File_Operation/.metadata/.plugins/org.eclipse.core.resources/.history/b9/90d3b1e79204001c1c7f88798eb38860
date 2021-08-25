@@ -1,0 +1,84 @@
+package com;
+import java.util.*;
+public class Loop extends OuterFunction {
+	 String filename;
+	 
+	    String n,ch;
+	    Scanner sc = new Scanner(System.in);
+	   
+	    void switch1()
+	    {
+	        boolean b = true;
+	        
+	        do{
+	            if(b==true){
+	                
+	            System.out.println("1. Show all files \n 2. perform operations on files \n 3. exit");
+
+	        System.out.print("enter the action no. to be performed\n");
+	          n=sc.next();
+	        switch(n)
+	        {
+	          
+	        case "1":
+	            display();
+	        break;
+	        
+	      case "2":
+	      operation();
+	        break;
+	      case "3":
+	            System.out.println("Thank you for Visiting");
+	            b=false;
+	        break;
+	        
+	      default:
+	        System.out.println("plz select correct option");
+	        break;
+	        }
+	    }
+	    else{
+	    break;
+	    }
+	        }while(b);
+	    }
+
+	     void operation()
+	     {
+	        boolean b = true;
+	        
+	        do{
+	            if(b==true){
+	                
+	        System.out.println("a. Add file \n d. Delete file \n s. Search file \n e. exit");
+	      System.out.print("enter the action no. to be performed\n");
+	      ch=sc.next();
+
+	      switch(ch)
+	      {
+	        
+	      case "a" :
+	          create();
+	          break;
+	      
+	      case "d":
+	          delete();
+	          break;
+	      case "s":
+	          search();
+	          break;
+	      case "e":
+	         exit();
+	            b=false;
+	           break;
+	       default:
+	          System.out.println("plz select correct option");
+	           break;
+	      }
+	    }
+	      else{
+	        break;
+	        }
+	            }while(b);
+	        } 
+}
